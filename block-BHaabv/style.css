@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    background-color:#1d2135;
+}
+
+/* Colors 
+background top - #1d2135
+background bottom - #1e2029
+
+total followers - #8e97b7
+dark mode - #458bc8 to #4cc993
+Increase - #2d9484
+decrease - #b14453
+
+container-color - #252b43
+container1 - #2475be
+container2 - #1ea1f1
+containter3 - left #cba268, right #c95290
+container4 - #c0062a
+
+
+Arrows code:  U+25B2 (&#x25B2) and U+25BC (&#x25BC)
+
+*/
+
+/* Main */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: white;
+    margin: 10px 0;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    color:  #8e97b7;
+    font-size: 13px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color:  #8e97b7;
+}
+
+html, body {
+    background: linear-gradient(to bottom, rgb(29, 33, 53) 30%, rgb(30, 32, 41) 30%);
+    height: 100%;
+}
+/* Social Media Dashboard */
+
+.top-header {
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-mode {
+    margin: 25px 0;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dark-mode h4 {
+    margin-top: 3px;
+}
+
+.toggle-inner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color:#1d2135;
+    margin: 1px;
+}
+
+.toggle-outer {
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    background: linear-gradient(to right, #458bc8, #4cc993);
+    border-radius: 20px;
+
+}
+
+
+
+.box-container {
+    margin: 10px auto;
+    width: 80%;
+    height: 250px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.box-container .hr-1, .hr-2, .hr-3, .hr-4 {
+    height: 0;
+    border-bottom: 4px solid #178ff5;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    position: relative;
+    bottom: 2px;
+}
+
+.box-container .hr-3 {
+    width: 100%;
+    height: 4px;
+    border: 0px;
+    background:  
+    linear-gradient(to right, #dd4d93, #dcad6a),no-repeat;
+}
+
+.box-container  .hr-2 {
+    border-bottom: 4px solid #1ca2f1;
+}
+
+
+
+.box-container  .hr-4 {
+    border-bottom: 4px solid #c20429;
+}
+
+
+.box1 {
+    width: 22%;
+    height: 80%;
+    text-align: center;
+    background-color: #252b43;
+    border-radius: 2px;
+
+}
+
+.box1 span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+ 
+}
+
+
+.box-container h4 {
+    letter-spacing: 4px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.box-container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.box-container p {
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px;
+}
+
+.box-container .social-icon {
+    display: inline-block;
+    padding: 15px 0px;
+    height: 10px;
+}
+
+.box1 h5 {
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.follower-increase {
+    color: #4cc993;;
+}
+
+.follower-decrease {
+    color: #b14453;;
+}
+
+
+/* Overview - Today */
+
+.main-overview {
+    margin: 0 auto;
+    width: 80%;
+    height: 350px ;
+}
+
+.overview-container {
+    margin: 10px auto;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:space-between;
+    flex-basis: 23%;
+    flex-flow: wrap;
+}
+
+
+.box2 {
+    width: 22%;
+    height: auto;
+    background-color: #252b43;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+/* 
+.box2 div {
+    width: 30%;
+    height: 100%;
+    line-height: 10px;
+    border-radius: 4px;
+    margin-left: 20px;
+    background-color: #4cc993;
+} */
+
+.box2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.main-overview h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+
+.box2 h5 {
+    font-size: 12px;
+    color: #8e97b7;
+}
+
+.box2 img {
+    height: 25px;
+    width: 25px;
+}
+
+
+.box2 p {
+    font-size: 8px;
+}
+
+.box2 h2 {
+    font-size: 30px;
+    color: white;
+}
+/* .box3 {
+    padding: 10px;
+} */
+
+
+.box2b {
+    display: flex;
+    align-items: flex-end;
+}
